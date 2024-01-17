@@ -1,0 +1,16 @@
+ abstract class Example {
+	static int a=10;
+	int x=20;
+	void m1(){
+		System.out.println("m1 is executed from Example from the object"+this);
+	}
+}
+class Sample extends Example{
+}
+class Test04{
+	public static void main(String[]args){
+		Example e1;
+		e1=new Sample();
+		e1.m1();
+	}
+}
